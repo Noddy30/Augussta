@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>0d458629-246b-409c-802e-f1a86db197ec</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MySql.Data" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Data\" />
+    <None Remove="Shared\" />
+    <None Remove="Shared\Enums\" />
+    <None Remove="MySql.Data.EntityFrameworkCore" />
+    <None Remove="Pomelo.EntityFrameworkCore.MySql" />
+    <None Remove="Services\LoginService\" />
+    <None Remove="Services\EmailService\" />
+    <None Remove="Views\Login\Partials\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" /> 
+    <None Remove="MySql.EntityFrameworkCore" />
+    <None Remove="Views\Shared\_navBar.html" />
+    <None Remove="Services\UserService\" />
+    <None Remove="Views\User\" />
+    <None Remove="Models\" />
+    <None Remove="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.28" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="6.10.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.0" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Shared\" />
+    <Folder Include="Shared\Enums\" />
+    <Folder Include="Services\LoginService\" />
+    <Folder Include="Services\EmailService\" />
+    <Folder Include="Views\Login\Partials\" />
+    <Folder Include="Services\UserService\" />
+    <Folder Include="Views\User\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Content.csproj" />
+  </ItemGroup>
+</Project>
